@@ -15,6 +15,8 @@ toggleButton.addEventListener("click", () => {
 
 // HOME PAGE JS - PUT CODE UNDER HERE
 
+   // accordion 
+   
 const accordionItemHeaders = document.querySelectorAll(
   ".accordion-item-header"
 );
