@@ -1,0 +1,318 @@
+ body {
+     margin: 0;
+     font-family: "Archivo Black", sans-serif;
+     font-family: "Commissioner", sans-serif;
+     font-family: "Fredoka One", cursive;
+     padding: 0;
+     text-align: center;
+
+     background: #dc7979;
+ }
+
+ * {
+     box-sizing: border-box;
+     margin: 0;
+ }
+
+ html,
+ body {
+     height: 100%;
+ }
+
+ /* HOME PAGE STYLES  */
+
+
+ /*  Banner image  */
+
+ .main-image {
+     position: relative;
+     background: url(/images/image2.jpg) no-repeat center content-box;
+     background-size: cover;
+     height: 500px;
+     overflow: hidden;
+ }
+
+ .container {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     text-align: center;
+     color: #fff;
+     font-weight: 700;
+     text-transform: uppercase;
+ }
+
+ .container h1 {
+     margin: 0;
+     font-size: 66px;
+ }
+
+ .container h1 span {
+     border: 6px solid white;
+     padding: 6px 14px;
+     display: inline-block;
+ }
+
+ .cen {
+     margin: 20px;
+     display: block;
+     font-size: 22px;
+ }
+
+ .button {
+     color: #313131;
+     padding: 10px 24px;
+     background: #f1f1f1;
+     text-decoration: none;
+     border-radius: 12px;
+     transition: .6s;
+ }
+
+ .button:hover {
+     opacity: .6;
+ }
+
+ /* ABOUT PAGE STYLES  */
+
+ /* HOW TO HEP PAGE STYLES  */
+
+ /* RESPONSIVE */
+
+ .navbar {
+     display: flex;
+     position: relative;
+     justify-content: space-between;
+     align-items: center;
+     background-color: #333;
+     color: white;
+ }
+
+ .brand-title {
+     font-size: 1.5rem;
+     margin: 0.5rem;
+ }
+
+ .navbar-links {
+     height: 100%;
+ }
+
+ .navbar-links ul {
+     display: flex;
+     margin: 0;
+     padding: 0;
+ }
+
+ .navbar-links li {
+     list-style: none;
+ }
+
+ .navbar-links li a {
+     display: block;
+     text-decoration: none;
+     color: white;
+     padding: 1rem;
+ }
+
+ .navbar-links li:hover {
+     background-color: #555;
+ }
+
+ .toggle-button {
+     position: absolute;
+     top: 0.75rem;
+     right: 1rem;
+     display: none;
+     flex-direction: column;
+     justify-content: space-between;
+     width: 30px;
+     height: 21px;
+ }
+
+ .toggle-button .bar {
+     height: 3px;
+     width: 100%;
+     background-color: white;
+     border-radius: 10px;
+ }
+
+ @media (max-width: 1000px) {
+     .navbar {
+         flex-direction: column;
+         align-items: flex-start;
+     }
+
+     .toggle-button {
+         display: flex;
+     }
+
+     .navbar-links {
+         display: none;
+         width: 100%;
+     }
+
+     .navbar-links ul {
+         width: 100%;
+         flex-direction: column;
+     }
+
+     .navbar-links ul li {
+         text-align: center;
+     }
+
+     .navbar-links ul li a {
+         padding: 0.5rem 1rem;
+     }
+
+     .navbar-links.active {
+         display: flex;
+     }
+ }
+
+ /*  FOOTER STYLES  */
+
+ /* Accord Styles  */
+
+ h1 {
+     text-align: center;
+     margin: 2rem 0;
+     font-size: 2.5rem;
+ }
+
+ .accordion {
+     width: 90%;
+     max-width: 1000px;
+     margin: 2rem auto;
+ }
+
+ .accordion-item {
+     background-color: #fff;
+     color: #111;
+     margin: 1rem 0;
+     border-radius: 0.5rem;
+     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+ }
+
+ .accordion-item-header {
+     padding: 0.5rem 3rem 0.5rem 1rem;
+     min-height: 3.5rem;
+     line-height: 1.25rem;
+     font-weight: bold;
+     display: flex;
+     align-items: center;
+     position: relative;
+     cursor: pointer;
+ }
+
+ .accordion-item-header::after {
+     content: "\002B";
+     font-size: 2rem;
+     position: absolute;
+     right: 1rem;
+ }
+
+ .accordion-item-header.active::after {
+     content: "\2212";
+ }
+
+ .accordion-item-body {
+     max-height: 0;
+     overflow: hidden;
+     transition: max-height 0.2s ease-out;
+ }
+
+ .accordion-item-body-content {
+     padding: 1rem;
+     line-height: 1.5rem;
+     border-top: 1px solid;
+     border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+ }
+
+ /*  TAB CONTENT  */
+
+ .mytabs {
+     display: flex;
+     flex-wrap: wrap;
+     max-width: 600px;
+     margin: 50px auto;
+     padding: 25px;
+ }
+
+ .mytabs input[type="radio"] {
+     display: none;
+ }
+
+ .mytabs label {
+     padding: 25px;
+     background: #e2e2e2;
+     font-weight: bold;
+ }
+
+ .mytabs .tab {
+     width: 100%;
+     padding: 20px;
+     background: #fff;
+     order: 1;
+     display: none;
+ }
+
+ .mytabs .tab h2 {
+     font-size: 3em;
+ }
+
+ .mytabs input[type="radio"]:checked+label+.tab {
+     display: block;
+ }
+
+ .mytabs input[type="radio"]:checked+label {
+     background: #fff;
+ }
+
+ /*  Dog Api Help page  */
+
+ .results {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .result {
+     background-color: #fff;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: 10px;
+     height: 400px;
+     width: 300px;
+ }
+
+ .result img {
+     object-fit: cover;
+     height: 100%;
+     width: 100%;
+ }
+
+ .buttons {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ button {
+     background-color: darksalmon;
+     border: 0;
+     border-radius: 4px;
+     color: #fff;
+     font-size: 18px;
+     padding: 10px;
+     margin: 10px;
+     width: 300px;
+ }
+
+ button:active {
+     transform: scale(0.98);
+ }
+
+ button:focus {
+     outline: none;
+ }
