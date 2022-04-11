@@ -75,6 +75,24 @@
 
  /* ABOUT PAGE STYLES  */
 
+ #more {
+     display: none;
+}
+
+#myBtn  {
+    background-color: #f1f1f1 ;
+    color: black;
+    text-transform: uppercase;
+    font-family: "Archivo Black", sans-serif;
+}
+
+.aboutp {
+    width: 600px;
+    text-align: center;
+    margin: 0 400px 0 350px;
+
+}
+
  /* HOW TO HEP PAGE STYLES  */
 
  /* RESPONSIVE */
@@ -316,3 +334,6 @@
  button:focus {
      outline: none;
  }
+
+
+ 
